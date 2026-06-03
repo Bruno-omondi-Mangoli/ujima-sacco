@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import Dashboard from './components/Dashboard'
-
 export default function App() {
   const [activeCase, setActiveCase] = useState(null)
   const [auditLog, setAuditLog] = useState([])
@@ -26,3 +25,4 @@ export default function App() {
     </div>
   )
 }
+console.log("VITE_API_URL =", import.meta.env.VITE_API_URL);
