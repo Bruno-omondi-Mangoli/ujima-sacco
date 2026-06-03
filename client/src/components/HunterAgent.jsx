@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Target, User, Calendar, TrendingUp } from 'lucide-react'
-import axios from 'axios'
+import api from '../api.js'
 import toast from 'react-hot-toast'
 import StatusBadge from './StatusBadge'
 
@@ -12,7 +12,7 @@ export default function HunterAgent({ member, scoutResult, guardianResult, onCom
     if (!member || !scoutResult || !guardianResult) return toast.error('Guardian triage required first')
     setLoading(true)
     try {
-      const res = await axios.post('/api/hunter/brief', { member, scoutContext: scoutResult, guardianResult })
+      const res = await api.post('/api/hunter/brief', { member, scoutContext: scoutResult, guardianResult })
       setResult(res.data.data)
       toast.success('Hunter Agent briefing ready')
       onComplete(res.data.data)

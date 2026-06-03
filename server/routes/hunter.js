@@ -1,5 +1,5 @@
 import express from 'express';
-import { askOllama } from '../ollama.js';
+import { askAI } from '../ollama.js';
 import { logDecision } from '../middleware/logger.js';
 
 const router = express.Router();
@@ -63,7 +63,7 @@ TASK: Prepare a briefing packet and respond ONLY with this JSON — no other tex
   "agentNote": "internal audit note"
 }`;
 
-    const result = await askOllama(prompt);
+    const result = await askAI(prompt);
 
     logDecision({
       agent: 'HUNTER',

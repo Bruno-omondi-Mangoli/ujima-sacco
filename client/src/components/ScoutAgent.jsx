@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Search, AlertTriangle, CheckCircle, ArrowRight } from 'lucide-react'
-import axios from 'axios'
+import api from '../api.js'
 import toast from 'react-hot-toast'
 import StatusBadge from './StatusBadge'
 
@@ -12,7 +12,7 @@ export default function ScoutAgent({ member, onComplete }) {
     if (!member) return toast.error('Select a member first')
     setLoading(true)
     try {
-      const res = await axios.post('/api/scout/analyse', { member })
+      const res = await api.post('/api/scout/analyse', { member })
       setResult(res.data.data)
       toast.success('Scout Agent analysis complete')
       onComplete(res.data.data)

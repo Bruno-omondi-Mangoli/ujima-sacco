@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Shield, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react'
-import axios from 'axios'
+import api from '../api.js'
 import toast from 'react-hot-toast'
 import StatusBadge from './StatusBadge'
 
@@ -12,7 +12,7 @@ export default function GuardianAgent({ member, scoutResult, onComplete }) {
     if (!member || !scoutResult) return toast.error('Scout analysis required first')
     setLoading(true)
     try {
-      const res = await axios.post('/api/guardian/triage', { member, scoutContext: scoutResult })
+      const res = await api.post('/api/guardian/triage', { member, scoutContext: scoutResult })
       setResult(res.data.data)
       toast.success('Guardian Agent triage complete')
       onComplete(res.data.data)

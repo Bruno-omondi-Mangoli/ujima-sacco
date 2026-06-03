@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Users, MessageSquare, ChevronRight } from 'lucide-react'
-import axios from 'axios'
+import api from '../api.js'
 import toast from 'react-hot-toast'
 
 export default function MemberPanel({ onSelectMember, selectedMember }) {
@@ -8,7 +8,7 @@ export default function MemberPanel({ onSelectMember, selectedMember }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    axios.get('/api/members')
+    api.get('/api/members')
       .then(res => { setMembers(res.data); setLoading(false) })
       .catch(() => { toast.error('Could not load members'); setLoading(false) })
   }, [])
