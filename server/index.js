@@ -19,6 +19,7 @@ const PORT = process.env.PORT || 3001;
 
 const allowedOrigins = [
   'http://localhost:5173',
+  'https://ujimasacco.netlify.app'
   process.env.FRONTEND_URL,
 ].filter(Boolean)
 

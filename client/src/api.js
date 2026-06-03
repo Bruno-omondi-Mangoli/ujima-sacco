@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const api = axios.create({
-  baseURL: 'https://ujima-sacco-server.onrender.com'
-})
+const baseURL = import.meta.env.VITE_API_URL || ''
+
+const api = axios.create({ baseURL })
 
 export default api
