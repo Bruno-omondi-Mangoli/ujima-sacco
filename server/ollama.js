@@ -3,7 +3,7 @@ import Groq from 'groq-sdk'
 const IS_PRODUCTION = process.env.NODE_ENV === 'production'
 const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434'
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || 'llama3'
-const GROQ_MODEL = 'llama-3.1-70b-versatile'
+const GROQ_MODEL = 'llama-3.1-8b-instant'
 
 // Extract JSON from any AI response
 const extractJSON = (text) => {
