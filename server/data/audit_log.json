@@ -137,5 +137,15 @@
       "drought insurance",
       "school fees savings plan"
     ]
+  },
+  {
+    "id": 1780526054447,
+    "timestamp": "2026-06-03T22:34:14.447Z",
+    "agent": "SCOUT",
+    "member": "Grace Atieno",
+    "sms": "Sina pesa za school fees. Watoto wangu watarudi shule wiki ijayo.",
+    "stressLevel": "HIGH",
+    "escalated": true,
+    "reason": "member is experiencing financial stress due to lack of funds for school fees"
   }
 ]
