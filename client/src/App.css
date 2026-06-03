@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a1727;
+  color: #e8edf5;
+  min-height: 100vh;
+}
+
+.font-mono { font-family: 'IBM Plex Mono', monospace; }
+.font-display { font-family: 'Playfair Display', serif; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a1727; }
+::-webkit-scrollbar-thumb { background: #1a3a5c; border-radius: 2px; }
+
+.scout-glow { box-shadow: 0 0 20px rgba(46,110,78,0.15); }
+.guardian-glow { box-shadow: 0 0 20px rgba(193,123,47,0.15); }
+.hunter-glow { box-shadow: 0 0 20px rgba(26,58,92,0.3); }
+
+@keyframes agent-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.agent-active { animation: agent-pulse 2s infinite; }
+
+@keyframes typing {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-4px); }
+}
+.typing-dot { animation: typing 1.2s infinite; }
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.slide-in { animation: slideIn 0.3s ease forwards; }

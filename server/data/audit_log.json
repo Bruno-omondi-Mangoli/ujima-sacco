@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1780487378140,
+    "timestamp": "2026-06-03T11:49:38.140Z",
+    "agent": "SCOUT",
+    "member": "Grace Atieno",
+    "sms": "Sina pesa za school fees. Watoto wangu watarudi shule wiki ijayo.",
+    "stressLevel": "HIGH",
+    "escalated": true,
+    "reason": "financial stress due to lack of funds for school fees"
+  },
+  {
+    "id": 1780487459001,
+    "timestamp": "2026-06-03T11:50:59.001Z",
+    "agent": "GUARDIAN",
+    "member": "Grace Atieno",
+    "loanAmount": 28000,
+    "score": 81,
+    "decision": "ESCALATE_TO_HUNTER",
+    "biasCheckPassed": true,
+    "riskFlags": []
+  },
+  {
+    "id": 1780487576348,
+    "timestamp": "2026-06-03T11:52:56.348Z",
+    "agent": "HUNTER",
+    "member": "Grace Atieno",
+    "assignedOfficer": "Sarah Wanjiku",
+    "priority": "MEDIUM",
+    "crossSell": [
+      "drought insurance"
+    ]
+  },
+  {
+    "id": 1780488041120,
+    "timestamp": "2026-06-03T12:00:41.120Z",
+    "agent": "SCOUT",
+    "member": "Peter Kamau",
+    "sms": "Nahitaji mkopo wa haraka kwa kurekebisha pikipiki yangu.",
+    "stressLevel": "HIGH",
+    "escalated": true,
+    "reason": "Member is seeking a quick loan to repair their motorcycle, which may indicate financial desperation and potential vulnerability to predatory lending practices."
+  },
+  {
+    "id": 1780488131436,
+    "timestamp": "2026-06-03T12:02:11.436Z",
+    "agent": "GUARDIAN",
+    "member": "Peter Kamau",
+    "loanAmount": 10000,
+    "score": 81,
+    "decision": "ESCALATE_TO_HUNTER",
+    "biasCheckPassed": true,
+    "riskFlags": []
+  },
+  {
+    "id": 1780488808321,
+    "timestamp": "2026-06-03T12:13:28.321Z",
+    "agent": "SCOUT",
+    "member": "James Ochieng",
+    "sms": "Nimekopwa sana na shylock. Anadai KES 15000 kesho. Siwezi kulipa.",
+    "stressLevel": "HIGH",
+    "escalated": true,
+    "reason": "Financial distress due to loan shark involvement"
+  },
+  {
+    "id": 1780488916364,
+    "timestamp": "2026-06-03T12:15:16.364Z",
+    "agent": "GUARDIAN",
+    "member": "James Ochieng",
+    "loanAmount": 15000,
+    "score": 81,
+    "decision": "ESCALATE_TO_HUNTER",
+    "biasCheckPassed": true,
+    "riskFlags": []
+  },
+  {
+    "id": 1780489362381,
+    "timestamp": "2026-06-03T12:22:42.381Z",
+    "agent": "SCOUT",
+    "member": "Fatuma Hassan",
+    "sms": "Ninahitaji mkopo wa KES 20000 kwa biashara yangu ya shea butter.",
+    "stressLevel": "HIGH",
+    "escalated": true,
+    "reason": "member seeking high loan amount, potential financial distress"
+  },
+  {
+    "id": 1780489435989,
+    "timestamp": "2026-06-03T12:23:55.989Z",
+    "agent": "GUARDIAN",
+    "member": "Fatuma Hassan",
+    "loanAmount": 20000,
+    "score": 81,
+    "decision": "ESCALATE_TO_HUNTER",
+    "biasCheckPassed": true,
+    "riskFlags": []
+  },
+  {
+    "id": 1780489555918,
+    "timestamp": "2026-06-03T12:25:55.918Z",
+    "agent": "HUNTER",
+    "member": "Fatuma Hassan",
+    "assignedOfficer": "Amina Hassan",
+    "priority": "MEDIUM",
+    "crossSell": [
+      "drought insurance"
+    ]
+  },
+  {
+    "id": 1780496652263,
+    "timestamp": "2026-06-03T14:24:12.263Z",
+    "agent": "SCOUT",
+    "member": "Grace Atieno",
+    "sms": "Sina pesa za school fees. Watoto wangu watarudi shule wiki ijayo.",
+    "stressLevel": "HIGH",
+    "escalated": true,
+    "reason": "High-level financial distress and mention of school fees"
+  },
+  {
+    "id": 1780496741022,
+    "timestamp": "2026-06-03T14:25:41.022Z",
+    "agent": "GUARDIAN",
+    "member": "Grace Atieno",
+    "loanAmount": 28000,
+    "score": 81,
+    "decision": "ESCALATE_TO_HUNTER",
+    "biasCheckPassed": true,
+    "riskFlags": []
+  },
+  {
+    "id": 1780496872640,
+    "timestamp": "2026-06-03T14:27:52.640Z",
+    "agent": "HUNTER",
+    "member": "Grace Atieno",
+    "assignedOfficer": "Sarah Wanjiku",
+    "priority": "MEDIUM",
+    "crossSell": [
+      "drought insurance",
+      "school fees savings plan"
+    ]
+  }
+]
