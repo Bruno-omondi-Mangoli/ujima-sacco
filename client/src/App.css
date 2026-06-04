@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Inter', sans-serif;
@@ -13,68 +9,30 @@ body {
   min-height: 100vh;
 }
 
-.font-mono { font-family: 'IBM Plex Mono', monospace; }
-.font-display { font-family: 'Playfair Display', serif; }
-
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #0a1727; }
 ::-webkit-scrollbar-thumb { background: #1a3a5c; border-radius: 2px; }
 
-.scout-glow { box-shadow: 0 0 20px rgba(46,110,78,0.15); }
+.scout-glow   { box-shadow: 0 0 20px rgba(46,110,78,0.15); }
 .guardian-glow { box-shadow: 0 0 20px rgba(193,123,47,0.15); }
-.hunter-glow { box-shadow: 0 0 20px rgba(26,58,92,0.3); }
+.hunter-glow  { box-shadow: 0 0 20px rgba(26,58,92,0.3); }
 
 @keyframes agent-pulse {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  50%       { opacity: 0.5; }
 }
 .agent-active { animation: agent-pulse 2s infinite; }
 
 @keyframes typing {
   0%, 60%, 100% { transform: translateY(0); }
-  30% { transform: translateY(-4px); }
+  30%           { transform: translateY(-4px); }
 }
-.typing-dot { animation: typing 1.2s infinite; }
-.typing-dot:nth-child(2) { animation-delay: 0.2s; }
-.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+.typing-dot                { animation: typing 1.2s infinite; }
+.typing-dot:nth-child(2)   { animation-delay: 0.2s; }
+.typing-dot:nth-child(3)   { animation-delay: 0.4s; }
 
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 .slide-in { animation: slideIn 0.3s ease forwards; }
-
-/* ─── RESPONSIVE ─────────────────────────── */
-
-/* Desktop — show desktop layout, hide mobile */
-.desktop-layout { display: grid; }
-.mobile-layout  { display: none; }
-.mobile-tabs    { display: none; }
-.desktop-only   { display: flex; }
-.mobile-only    { display: none; }
-
-/* Tablet — below 1024px */
-@media (max-width: 1024px) {
-  .desktop-layout {
-    grid-template-columns: 260px 1fr;
-    gap: 1rem;
-  }
-}
-
-/* Mobile — below 768px */
-@media (max-width: 768px) {
-  .desktop-layout { display: none; }
-  .mobile-layout  { display: block; }
-  .mobile-tabs    { display: flex; }
-  .desktop-only   { display: none !important; }
-  .mobile-only    { display: flex !important; }
-
-  body {
-    font-size: 14px;
-  }
-}
-
-/* Small mobile — below 480px */
-@media (max-width: 480px) {
-  body { font-size: 13px; }
-}
