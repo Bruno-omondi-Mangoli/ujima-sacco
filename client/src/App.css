@@ -43,3 +43,38 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 .slide-in { animation: slideIn 0.3s ease forwards; }
+
+/* ─── RESPONSIVE ─────────────────────────── */
+
+/* Desktop — show desktop layout, hide mobile */
+.desktop-layout { display: grid; }
+.mobile-layout  { display: none; }
+.mobile-tabs    { display: none; }
+.desktop-only   { display: flex; }
+.mobile-only    { display: none; }
+
+/* Tablet — below 1024px */
+@media (max-width: 1024px) {
+  .desktop-layout {
+    grid-template-columns: 260px 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Mobile — below 768px */
+@media (max-width: 768px) {
+  .desktop-layout { display: none; }
+  .mobile-layout  { display: block; }
+  .mobile-tabs    { display: flex; }
+  .desktop-only   { display: none !important; }
+  .mobile-only    { display: flex !important; }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Small mobile — below 480px */
+@media (max-width: 480px) {
+  body { font-size: 13px; }
+}
